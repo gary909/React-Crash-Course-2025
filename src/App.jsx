@@ -1,13 +1,20 @@
-import { useState } from 'react'
-import Products from './Products'
+import { useState } from 'react';
+import Products from './Products';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'react-bootstrap';
+import Rating from './Rating';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const isValid = true;
 
   return (
     <>
       <div>
-        <Products />
+        <Rating rating='1' />
+        <Rating rating='2' />
+        <Rating rating='3' />
+        <Rating rating='4' />
+        <Rating rating='5' />
       </div>
     </>
   )
